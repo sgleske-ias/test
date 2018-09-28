@@ -1,0 +1,5 @@
+stage("Vault secrets") {
+    vaultSecrets {
+        sh 'echo "SHARED_VAR -> ${SHARED_VAR:-}, LOCAL_VAR -> ${LOCAL_VAR:-}"'
+    }
+}
