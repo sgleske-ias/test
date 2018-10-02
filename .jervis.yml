@@ -4,4 +4,4 @@ env:
   - MATRIX_VAR=2
 script: 'echo "SHARED_VAR -> ${SHARED_VAR:-}, LOCAL_VAR -> ${LOCAL_VAR:-}"'
 jenkins:
-  vault_secrets: true
+  pipeline_jenkinsfile: .ci/Jenkinsfile
